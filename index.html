@@ -3,59 +3,83 @@
 
 <head>
     <title>Form | Task Week 1</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div>
-        <h1>Difan Mardhi</h1>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum eveniet tempora magnam impedit aliquam
-            facilis
-            odit libero temporibus, aliquid fugit consequatur ipsum pariatur quis? Libero minus nobis doloribus
-            veritatis
-            ducimus.
-        </p>
-        <div>
-            <img src="img/telephone.png">
-            <span>08123123234</span>
+    <div class="container">
+
+        <div class="data">
+
+            <h1>Difan Mardhi</h1>
+
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s,
+            </p>
+
+            <div class="telephone">
+                <img src="img/telephone.png">
+                <span class="text">08123123234</span>
+            </div>
+
+            <div class="email">
+                <img src="img/email.png">
+                <span class="text">difan@dumbways.id</span>
+            </div>
+
+            <div class="address">
+                <img src="img/address.png">
+                <span class="text">
+                    Jl. Elang IV, Sawah Lama, Kec. Ciputat, Kota Tangerang Selatan, Banten 15413
+                </span>
+            </div>
+
         </div>
-        <div>
-            <img src="img/email.png">
-            <span>difan@dumbways.id</span>
+
+        <div class="form-input">
+
+            <div class="card">
+
+                <form action="#" id="form">
+                    <h3>Input Your Data</h3>
+
+                    <div class="group-input first-group-input">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+
+                    <div class="group-input">
+                        <label for="summary">Summary</label>
+                        <input type="text" id="summary" name="summary">
+                    </div>
+
+                    <div class="group-input">
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone" name="phone">
+                    </div>
+
+                    <div class="group-input">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email">
+                    </div>
+
+                    <div class="group-input">
+                        <label for="address">Address</label>
+                        <textarea name="" id="address" name="address" cols="50" rows="5"></textarea>
+                    </div>
+
+                    <div class="btn-submit">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+
+            </div>
+
         </div>
-        <div>
-            <img src="img/address.png">
-            <span>
-                Jl. Elang IV, Sawah Lama, Kec. Ciputat, Kota Tangerang Selatan, Banten 15413
-            </span>
-        </div>
+
     </div>
-    <div>
-        <h3>Input Your Data</h3>
-        <div>
-            <label for="name">Name</label>
-            <input type="text" id="name">
-        </div>
-        <div>
-            <label for="summary">Summary</label>
-            <input type="text" id="summary">
-        </div>
-        <div>
-            <label for="phone">Phone</label>
-            <input type="text" id="phone">
-        </div>
-        <div>
-            <label for="email">Email</label>
-            <input type="text" id="email">
-        </div>
-        <div>
-            <label for="address">Address</label>
-            <textarea name="" id="address" cols="50" rows="5"></textarea>
-        </div>
-        <div>
-            <button>Submit</button>
-        </div>
-    </div>
+
 </body>
 
 </html>
