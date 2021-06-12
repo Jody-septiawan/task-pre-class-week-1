@@ -1,24 +1,23 @@
-const form = document.querySelector("#form");
+// Mengambil element form berdasarkan id
+const form = document.getElementById("form");
 
-const dataName = document.querySelector("#data-name");
-const dataSummary = document.querySelector("#data-summary");
-const dataPhone = document.querySelector("#data-phone");
-const dataEmail = document.querySelector("#data-email");
-const dataAddress = document.querySelector("#data-address");
-
+// Ketika terjadi event SUBMIT pada FORM
 form.addEventListener("submit", (e) => {
+    
+    // Mencegah terjadinya event
     e.preventDefault();
 
-    const name = e.target.elements["name"].value;
-    const summary = e.target.elements["summary"].value;
-    const phone = e.target.elements["phone"].value;
-    const email = e.target.elements["email"].value;
-    const address = e.target.elements["address"].value;
+    // Mengambil data dari tag input
+    const name = document.getElementById("name").value;
+    const summary = document.getElementById("summary").value;
+    const phone = document.getElementById("phone").value;
+    const email = document.getElementById("email").value;
+    const address = document.getElementById("address").value;
 
-    dataName.innerText = name;
-    dataSummary.innerText = summary;
-    dataPhone.innerText = phone;
-    dataEmail.innerText = email;
-    dataAddress.innerText = address;
-
+    // Mencetak data text dari from
+    document.getElementById("data-name").innerText = name;
+    document.getElementById("data-summary").innerText = summary;
+    document.getElementById("data-phone").innerText = phone;
+    document.getElementById("data-email").innerText = email;
+    document.getElementById("data-address").innerText = address;
 })
